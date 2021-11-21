@@ -1,0 +1,199 @@
+WindowManager:
+    MainWindow:
+    UsheringWindow:
+    EvangelismWindow:
+    PraiseWorshipWindow:
+    DecorWindow:
+    MediaWindow:
+    SoundWindow:
+    SanctuaryKeepingWindow:
+
+<MainWindow>:
+    name: 'main'
+    ScrollView:
+        MDBoxLayout:
+            orientation: 'vertical'
+            size: root.width, root.height
+            MDToolbar:
+                title: "Soldout Departments"
+            MDBoxLayout:
+                adaptive_height: True
+                orientation: 'vertical'
+                md_bg_color: app.theme_cls.primary_color
+                spacing: '20dp'
+                MDBoxLayout:
+                    height: 60
+                    size_hint_y: None
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    md_bg_color: app.theme_cls.primary_color
+                    size_hint_y: None
+                    adaptive_height: True
+                    radius: [20, 20, 0, 0]
+                    padding: [10, 0, 0, 0]
+                    MDBoxLayout:
+                        orientation: 'vertical'
+                        padding:
+                    MDList:
+                        OneLineAvatarIconListItem:
+                            text: 'Ushering'
+                            on_release:
+                                app.root.current = 'ushering'
+                                root.manager.transition.direction = 'left'
+                        OneLineAvatarIconListItem:
+                            text: 'Evangelism'
+                            on_release:
+                                app.root.current = 'evangelism'
+                                root.manager.transition.direction = 'left'
+                        OneLineAvatarIconListItem:
+                            text: 'Praise & Worship'
+                            on_release:
+                                app.root.current = 'praise_and_worship'
+                                root.manager.transition.direction = 'left'
+                        OneLineAvatarIconListItem:
+                            text: 'Decor'
+                            on_release:
+                                app.root.current = 'decor'
+                                root.manager.transition.direction = 'left' 
+                        OneLineAvatarIconListItem:
+                            text: 'Media'
+                            on_release:
+                                app.root.current = 'media'
+                                root.manager.transition.direction = 'left'
+                        OneLineAvatarIconListItem:
+                            text: 'Sound'
+                            on_release:
+                                app.root.current = 'sound'
+                                root.manager.transition.direction = 'left'
+                        OneLineAvatarIconListItem:
+                            text: 'Sanctuary Keeping'
+                            on_release:
+                                app.root.current = 'sanctuary'
+                                root.manager.transition.direction = 'left'
+ 
+        # Button:
+        #     text: "Next Screen"
+        #     font_size: 
+        #     pos: 200,200
+        #     size_hint: .4, .1
+        #     on_release:
+        #         app.root.current = 'second'
+        #         root.manager.transition.direction = 'left'
+            
+
+<UsheringWindow>:
+    name: 'ushering'
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        MDBoxLayout:
+
+        
+
+        MDIconButton:
+            icon: 'home-account'
+            font_size:
+            pos: 200,200
+            size_hint: None, None
+            on_release:
+                app.root.current = 'main'
+                root.manager.transition.direction = 'right'
+
+<EvangelismWindow>:
+    name: 'evangelism'
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        MDBoxLayout:
+
+        MDIconButton:
+            icon: 'home-account'
+            font_size:
+            pos: 200,200
+            size_hint: None, None
+            on_release:
+                app.root.current = 'main'
+                root.manager.transition.direction = 'right'
+
+<PraiseWorshipWindow>:
+    name: 'praise_and_worship'
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        MDBoxLayout:     
+
+        MDIconButton:
+            icon: 'home-account'
+            font_size:
+            pos: 200,200
+            size_hint: None, None
+            on_release:
+                app.root.current = 'main'
+                root.manager.transition.direction = 'right'
+
+<DecorWindow>:
+    name: 'decor'
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        MDBoxLayout:
+
+
+        MDIconButton:
+            icon: 'home-account'
+            font_size:
+            pos: 200,200
+            size_hint: None, None
+            on_release:
+                app.root.current = 'main'
+                root.manager.transition.direction = 'right'
+
+<MediaWindow>:
+    name: 'media'
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        MDBoxLayout:
+
+     
+            MDIconButton:
+                icon: 'home-account'
+                font_size:
+                pos: 200,200
+                size_hint: None, None
+                on_release:
+                    app.root.current = 'main'
+                    root.manager.transition.direction = 'right'
+
+<SoundWindow>:
+    name: 'sound'
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        MDBoxLayout:
+
+        MDIconButton:
+            icon: 'home-account'
+            font_size:
+            pos: 200,200
+            size_hint: None, None
+            on_release:
+                app.root.current = 'main'
+                root.manager.transition.direction = 'right'
+
+<SanctuaryKeepingWindow>:
+    name: 'sanctuary'
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        MDBoxLayout:     
+
+        MDIconButton:
+            icon: 'home-account'
+            font_size:
+            pos: 200,200
+            size_hint: None, None
+            on_release:
+                app.root.current = 'main'
+                root.manager.transition.direction = 'right'
+
